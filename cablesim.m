@@ -26,7 +26,7 @@ t = linspace(0, T, Nt);
 u = zeros(Nx, Nt);
 
 % initial conditions
-u(:,1) = x;
+u(:,1) = x';
 
 % iterations
 for n = 1:Nt-1
