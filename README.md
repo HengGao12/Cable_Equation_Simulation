@@ -1,4 +1,4 @@
-# Cable_Equation_Simulation
+# Cable Equation Simulation
 > Heng Gao  
 > Fudan University  
 ----
