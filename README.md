@@ -11,6 +11,9 @@ $v = 0 , \quad(x, t)\in \partial \Omega \times [0, T],$
 $v(x, 0) = \mu(x), \quad (x, t)\in \Omega\times \{t=0\},$  
 where $\tau, \lambda, T$ are constants, $\Omega=[0, l]$, $l$ is the length of the cable, $\mu(x)$ is bounded on $\Omega$, $\mu(x)\in C^1(\Omega)$, satisfying $\mu(0)=\mu(l)=0$.
 
+## Usage
+Directly run the `cablesim.m` using Matlab on your own computer.
+
 
 
 
