@@ -12,7 +12,6 @@ $$
     \frac{\partial v}{\partial t}(x,t) + \frac{1}{\tau} v(x,t)-\frac{\lambda^2}{\tau} \frac{\partial^2 v}{\partial x^2}(x,t)=0,& (x, t) \in \Omega\times[0, T], \\
     v = 0 ,& (x, t)\in \partial \Omega \times [0, T], \\
     v(x, 0) = \mu(x), & (x, t)\in \Omega\times \left\{t=0\right\},
-    
 \end{cases}
 \end{equation}
 $$
