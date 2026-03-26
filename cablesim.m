@@ -77,6 +77,7 @@ text(maxX, maxT, maxValue, ...
     'HorizontalAlignment', 'center', 'VerticalAlignment', 'bottom', ...
     'BackgroundColor', 'black', 'Color', 'white', 'FontSize', 10, 'FontName', 'Times New Roman');
 
+
 % Highlight the maximum value point on the surface
 hold on;
 plot3(maxX, maxT, maxValue, 'ko', 'MarkerSize', 10, 'MarkerFaceColor', 'k');
