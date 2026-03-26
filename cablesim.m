@@ -25,9 +25,10 @@ t = linspace(0, T, Nt);
 u = zeros(Nx, Nt);
 
 % initial conditions
-% u(2:Nx-1,1) = (x(2:Nx-1))';
-u(2:Nx-1,1) = (exp(-x(2:Nx-1)))';
-% u(2:Nx-1,1)=1.0*(ones(size(u(2:Nx-1,1))))'; 
+mu=-x(2:Nx-1).^2 + l*x(2:Nx-1);  % condition 1  -x^2+l*x
+% mu = sin((2*pi/l)*x(2:Nx-1));    % condition 2  sin((2*\pi/l)x)
+% mu = x(2:Nx-1).*(l-x(2:Nx-1)).*exp(-x(2:Nx-1));  % condition 3  x(l-x)e^{-x}
+u(2:Nx-1,1) = (mu)';
 u(1,1) = 0;
 u(Nx, 1) = 0;
 
@@ -80,3 +81,4 @@ text(maxX, maxT, maxValue, ...
 hold on;
 plot3(maxX, maxT, maxValue, 'ko', 'MarkerSize', 10, 'MarkerFaceColor', 'k');
 hold off;
+
